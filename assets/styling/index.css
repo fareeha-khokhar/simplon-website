@@ -1,0 +1,110 @@
+/* General Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Bootstrap Overrides */
+.text-pink {
+    color: #E91E63 !important;
+}
+
+.bg-pink {
+    background-color: #E91E63 !important;
+}
+
+.btn-pink {
+    background-color: #E91E63;
+    color: #fff;
+    border-radius: 15px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+}
+
+.btn-pink:hover {
+    background-color: #c2185b;
+    color: #fff;
+}
+
+.hero {
+    padding: 80px 0;
+}
+
+/* Category Styling */
+.category-item {
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+.glow {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    animation: glowEffect 2s infinite alternate;
+  }
+
+@keyframes glowEffect {
+    0% {
+      box-shadow: 0 0 10px #c2185b;
+    }
+    30% {
+      box-shadow: 0 0 25px #c2185b;
+    }
+    70% {
+      box-shadow: 0 0 15px #c2185b;
+    }
+    100% {
+      box-shadow: 0 0 5px #c2185b;
+    }
+  }
+.carousel-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 2px solid #E91E63; /* Pink border */
+}
+
+  .glass-effect {
+    box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.2), 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+/* Background Image for Contact Section */
+.bg-contact {
+  background: url('../../assets/images/bg-contact.jpg') no-repeat center center/cover;
+  color: black; /* Ensure text is readable */
+  position: relative;
+  padding: 80px 0;
+}
+
+/* Shadow Effect */
+.bg-contact::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
+
+/* Ensuring Content Stays Above Overlay */
+.bg-contact .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Form Styling */
+.bg-contact input,
+.bg-contact textarea {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
