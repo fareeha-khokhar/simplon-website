@@ -1,5 +1,4 @@
 .shop-text {
-    font-size: 62px; /* Adjust size as needed */
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ffbfd4, #f8bbd0, #E91E63, #000000);
@@ -12,6 +11,6 @@
 }
 
 .shop-text-wrapper {
-    text-align: center; /* Centers the text */
+    text-align: center; 
     width: 100%;
 }
