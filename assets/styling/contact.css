@@ -1,0 +1,70 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+
+/* Contact Box */
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0, #E91E63);
+    border: 3px solid #E91E63;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Form Container */
+.form-container {
+    flex: 1;
+    padding: 30px;
+    min-width: 300px;
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0 12px 12px 0;
+}
+
+/* Form Styling */
+.control-css {
+    border: 2px solid #E91E63;
+    border-radius: 6px;
+    padding: 12px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-top: 20px;
+        border-radius: 12px;
+    }
+}

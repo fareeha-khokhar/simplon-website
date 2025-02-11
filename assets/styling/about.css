@@ -1,0 +1,33 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0, #E91E63);
+    padding: 60px 0;
+}
+
+/* Team Section */
+.team-section .card {
+    transition: transform 0.3s ease;
+}
+
+.team-section .card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section .col-lg-6 {
+        text-align: center;
+    }
+
+    .about-section img {
+        margin-top: 20px;
+    }
+}
