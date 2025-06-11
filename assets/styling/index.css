@@ -124,3 +124,18 @@
   text-align: center; /* Centers the text */
   width: 100%;
 }
+.cart-img {
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .btn-remove {
+            color: #ff4d4d;
+            border: none;
+            background: none;
+        }
+
+        .table > :not(:last-child) > :last-child > * {
+            border-bottom-color: #dee2e6;
+        }
