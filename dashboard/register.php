@@ -1,3 +1,6 @@
+<?php
+include 'components/connection.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,7 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../assets/styling/index.css">
+  <link rel="stylesheet" href="../assets/styling/style.css">
   <style>
     body {
       background-color: #fdf3f7;
@@ -30,26 +33,36 @@
   <!-- Register Form -->
   <div class="register-container">
     <h2 class="text-center text-pink fw-bold mb-4">Create an Account</h2>
-    <form action="process-register.php" method="POST">
+    <form method="POST" action="">
       <div class="mb-3">
         <label for="username" class="form-label">Username</label>
         <input type="text" name="username" id="username" class="form-control" required>
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" name="email" id="email" class="form-control" required>
-      </div>
-      <div class="mb-3">
         <label for="password" class="form-label">Password</label>
         <input type="password" name="password" id="password" class="form-control" required minlength="6">
       </div>
-      <div class="mb-3">
-        <label for="confirm_password" class="form-label">Confirm Password</label>
-        <input type="password" name="confirm_password" id="confirm_password" class="form-control" required>
-      </div>
-      <button type="submit" class="btn btn-pink w-100">Register</button>
+       <div class="mb-4">
+                    <label for="role" class="form-label">Role</label>
+                    <input type="text" class="form-control" id="role" name="role" required>
+                  </div>
+      <input type="submit" value="Register" class="btn btn-pink w-100 mb-3" name="submit">
       <p class="mt-3 text-center">Already have an account? <a href="login.php" class="text-pink">Login</a></p>
     </form>
+
+    <?php
+    if(isset($_POST['submit'])){
+        
+    $uname = $_POST['username'];
+    $password = $_POST['password'];
+    $role = $_POST['role'];
+    $hashedPassword = password_hash($password,PASSWORD_DEFAULT);
+    $check= $conn->prepare("insert into tbl_users (username, password, role) values (?,?,?)");
+    $check->bind_param("sss",$uname,$hashedPassword,$role);
+    $check->execute();
+    header("location:login.php");
+    }
+    ?>
   </div>
 
   <!-- Bootstrap JS -->

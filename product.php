@@ -2,15 +2,12 @@
 $product = [
     'title' => 'Glow Boost Moisturizer',
     'price' => 28.00,
-    'volume' => '200 ML / 6.76 oz',
     'image' => 'assets/images/product-3.jpg',
     'short_description' => '100% raw, unrefined, organic & cruelty-free. 200 ML / 6.76 oz',
     'description' => "This is a jar of pure magic: a beauty-grade Coconut Oil created specifically for your hair and skin. Say goodbye to bringing that clunky jar of cooking oil to the bathroom. Using our special cold-pressed and centrifuge extraction method, this Coconut Oil is exceptionally pure, highly moisturizing, non-greasy, and will absorb quickly into your hair and skin—leaving it nourished, healthy, and radiantly smooth.",
     'accordion' => [
         'Ingredients' => '100% Organic Cold-Pressed Coconut Oil.',
-        'Watch Video' => '<iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>',
-        'Benefits & How To Use' => 'Apply on dry hair or skin. Massage gently. Use daily for best results.',
-        'Why Love Hair Coconut Oil' => 'Crafted with sustainability and wellness in mind. Cruelty-free, vegan, and ethically sourced.'
+        'Benefits & How To Use' => 'Apply on dry hair or skin. Massage gently. Use daily for best results.'
     ]
 ];
 ?>
@@ -23,7 +20,7 @@ $product = [
     <title><?php echo $product['title']; ?> - Love Hair</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/styling/index.css">
+    <link rel="stylesheet" href="assets/styling/style.css">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Bootstrap 5 CSS -->

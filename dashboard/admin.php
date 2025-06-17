@@ -10,7 +10,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="../assets/styling/index.css"> <!-- Make sure this file contains your shared CSS -->
+  <link rel="stylesheet" href="../assets/styling/style.css"> <!-- Make sure this file contains your shared CSS -->
 </head>
 <body>
 

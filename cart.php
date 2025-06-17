@@ -20,7 +20,7 @@ $cart = [
     <title>Your Cart - Love Hair</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/styling/index.css">
+    <link rel="stylesheet" href="assets/styling/style.css">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Bootstrap -->
@@ -95,7 +95,9 @@ $cart = [
                         <span>Total</span>
                         <span>$<?php echo number_format($total, 2); ?></span>
                     </div>
-                    <button class="btn btn-dark w-100 mt-3">Proceed to Checkout</button>
+                    <a href="checkout.php" class="text-decoration-none">
+                        <button class="btn btn-dark w-100 mt-3">Proceed to Checkout</button>
+                    </a>
                 </div>
             </div>
         </div>

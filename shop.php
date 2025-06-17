@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/styling/index.css">
+    <link rel="stylesheet" href="assets/styling/style.css">
     <link rel="stylesheet" href="assets/styling/shop.css">
 </head>
 
@@ -65,7 +65,7 @@
                         <p class="h6">Glow Boost Moisturizer</p>
                         <span class="text-muted">$19.99</span>
                     </div>
-                    <a href="product.php"><button class="btn btn-pink">Buy Now</button></a>
+                    <a href="product.php" class="text-decoration-none"><button class="btn btn-pink">Buy Now</button></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6">

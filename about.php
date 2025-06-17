@@ -18,7 +18,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/styling/about.css">
-    <link rel="stylesheet" href="assets/styling/index.css">
+    <link rel="stylesheet" href="assets/styling/style.css">
 </head>
 
 <body>
